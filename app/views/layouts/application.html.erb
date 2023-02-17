@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  <link rel="stylesheet" href="/assets/style.css" type="text/css" />
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body><div id="page" align="center">
+		<div id="content" style="width:800px">
+			<div id="logo">
+				<div style="margin-top:70px" class="whitetitle">Blog Page</div>
+			</div>
+			<div id="topheader">
+				<div align="left" class="bodytext">
+					<br />
+					<strong>New Blog Page</strong><br />
+								new_blog@gmail.com
+				</div>
+				<div id="toplinks" class="smallgraytext">
+					<a href="#">Home</a> | <a href="#">Contact Us</a>
+				</div>
+			</div>
+			<div id="menu">
+				<div align="right" class="smallwhitetext" style="padding:9px;">
+					<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Products</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a>
+				</div>
+			</div>
+		
+			<div id="contenttext">
+				<div style="padding:10px">
+					<span class="titletext">Welcome to New Blog page!</span>
+					</div>
+					<div class="bodytext" style="padding:12px;" align="justify">
+					<strong> Create your own beatiful blog...		  </strong><br />
+					<br />
+					A blog post is an individual entry or article written by an author for a blog. Blog posts can include content like text, images, infographics or videos, and are usually hosted on a blog section of a commercial website, or on a domain reserved for blogging. <br /><br />
+
+          Blogs posts are an efficient way to share information, interact with your audience, and increase your online visibility. For businesses, blog posts can focus any aspect of operation, from customer testimonials to recent achievements.<br>
+					 <%= yield %>
+				</div>
+			</div>
+         
+			<div id="leftpanel">
+				<div align="justify" class="graypanel">
+					<span class="smalltitle">Beautiful_Blog Examples to Inspire you..</span><br /><br />
+					<span class="smallredtext">Help Scout</span><br />
+					<span class="smallredtext">Microsoft Stories</span><br />
+          <span class="smallredtext">Pando</span><br />
+          <span class="smallredtext">Fubiz</span><br />
+          <span class="smallredtext">Crew</span><br />
+          <span class="smallredtext">Webdesigner Depot</span><br />
+				</div>
+			</div>
+			<div id="footer" class="smallgraytext">
+				<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Products</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a>
+				| New Blog Page
+				&copy; 2023 
+			</div>
+		</div>
+	</div>
+
+  </body>
+</html>
